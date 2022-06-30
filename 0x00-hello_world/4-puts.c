@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * Main - Entry point
+ * Main - Main
  * Description: prints "\"Programming is like building a multilingual puzzle"
  * Return: Always  (0)
  */
