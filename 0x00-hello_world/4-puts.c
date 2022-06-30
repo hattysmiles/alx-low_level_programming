@@ -1,13 +1,3 @@
- /*
- *
- * File: 4-puts.c
- *
- * Auth: Habibat Adetoro <hattysmiles@gmail.com>
- *
- */
-
-
-
 #include <stdio.h>
 
  /**
