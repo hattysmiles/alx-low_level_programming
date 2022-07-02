@@ -1,4 +1,4 @@
-include <stdio.h>
+#include <stdio.h>
 #include <stdlib.h>
 /**
  * main - main block
@@ -25,5 +25,3 @@ int main(void)
 	putchar('\n');
 	return (0);
 }
-Footer
-© 2022 GitHub, In
