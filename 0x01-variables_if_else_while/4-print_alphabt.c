@@ -1,14 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- *
- ** main - Entry block
- *
- ** Description: lowercase without q and e
- *
- ** Return: 0
- *
- **/
+ * main - Entry block
+ * Description: lowercase without q and e
+ * Return: 0
+ */
 int main(void)
 {
 	char c = 'a';
@@ -20,9 +16,9 @@ int main(void)
 			putchar(c);
 		}
 		c++;
+	}
 
 	putchar('\n');
 	return (0);
 
 }
-
