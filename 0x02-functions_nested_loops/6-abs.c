@@ -1,65 +1,17 @@
-iiiqaiii#include "main.h"
-
+#include "main.h"
 /**
+ * _abs - computes the absolute value of an integrer
  *
- *  * _abs - computes the absolute value of an integrer
+ * @n: the int to check
  *
- *   *
+ * Return: the absolute value of int
  *
- *    * @n: the int to check
- *
- *     *
- *
- *      * Return: the absolute value of int
- *
- *       *
- *
- *        */
-
+ */
 int _abs(int n)
-	
 {
-	
-		if (n >= 0)
-			
-				{
-					
-							return (n);
-							
-								}
-		
-			return (-n);
-			
-iiiiiiii#include "main.h"
-
-/**
- *
- *  * _abs - computes the absolute value of an integrer
- *
- *   *
- *
- *    * @n: the int to check
- *
- *     *
- *
- *      * Return: the absolute value of int
- *
- *       *
- *
- *        */
-
-int _abs(int n)
-
-{
-
 	if (n >= 0)
-
 	{
-	
-			return (n);
-	
-		}
-
+		return (n);
+	}
 	return (-n);
-
-}}i
+}
