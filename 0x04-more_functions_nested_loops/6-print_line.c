@@ -1,14 +1,20 @@
-include "main.h"
+#include "main.h"
 /**
-*print_line - prints a straight line
-*@n:parameter
-*Return:returns nothing
+* more_numbers - prints 10 times the numbers, from 0 to 14.
 */
-void print_line(int n)
+void more_numbers(void)
 {
-while (n-- > 0)
-{
-_putchar('_');
-}
-_putchar('\n');
+	int i;
+	char c;
+
+	for (i = 0; i < 10; i++)
+	{
+		for (c = 0; c <= 14; c++)
+		{
+			if (c > 9)
+			_putchar((c / 10) + '0');
+			_putchar((c % 10) + '0');
+		}
+		_putchar('\n');
+	}
 }
