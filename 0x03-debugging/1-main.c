@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdio.h>
 /**
 * main - Comment causes an infinite loop
 * Return: 0
