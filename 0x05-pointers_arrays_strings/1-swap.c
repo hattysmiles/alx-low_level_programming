@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-	int a = 5, b = 10;
+	int a = 98, b = 42;
 	printf("Before Swap a = %d b = %d", a, b);
 	a = a + b;
 	b = a - b;
