@@ -1,20 +1,11 @@
 #include "main.h"
-#include <Stdio>
-
-void reset_to_98(int *);
 
 /**
- * main - functions that takes a pointer to int
- * Return: Always zero
+ * reset_to_98 - reset number to 98
+ * Return: Always void
  */
-int main(void)
+void reset_to_98(int *n)
 {
-	int n;
-
-	n = 402;
-	printf("n=%d\n", n);
-	reset_to_98(&n);
-	printf("n=%d\n", n);
-	return (0);
+	*n = 98
 }
 
