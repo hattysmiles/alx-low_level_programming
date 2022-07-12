@@ -1,4 +1,3 @@
-#include "main.h"
 #include <Stdio>
 /**
  * main - functions that takes a pointer to int
