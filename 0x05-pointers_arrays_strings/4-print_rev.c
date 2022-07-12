@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * print_rev - functions that print a string in reverse
+ * print_rev - function that prints a string in reverse
  * @s: string
- * Return: Nothing
+ * Return: nothing
  */
 void print_rev(char *s)
 {
@@ -14,7 +14,8 @@ void print_rev(char *s)
 	{
 		index++;
 	}
-	for (index = index - 1; index >= o; index--)
+
+	for (index = index - 1; index >= 0; index--)
 	{
 		_putchar(s[index]);
 	}
