@@ -8,7 +8,7 @@ int main(void)
 {
 	int n;
 	int *n;
-	n = 56;
+	n = 402;
 	*n = &n;
 	printf("n=%d\n",n);
 	*n = 98;
