@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * stdout - functions that print a string follwed by a new line
+ * _puts - functions that print a string follwed by a new line
  * @str: string
  * Return: nothing
  */
