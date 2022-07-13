@@ -1,49 +1,34 @@
 #include "main.h"
-
 /**
- *
- *  * puts2 - function prints every other character of a string
- *
- *   * @str: string
- *
- *    * Return: nothing
- *
- *     */
-
-void puts2(char *str)
-
+ * puts_half - function that prints half of a string
+ * @str: string
+ * Return: nothing
+ */
+void puts_half(char *str)
 {
+	int index, length;
 
-		int a, b;
+	length = 0;
 
+	while (str[length] != '\0')
+	{
+		length++;
+	}
 
+	if ((length % 2) != 0)
+	{
+		index = (length + 1) / 2;
+	}
+	else
+	{
+		index = (length / 2);
+	}
 
-			a = 0;
+	while (index < length)
+	{
+		_putchar(str[index]);
+		index++;
+	}
 
-				b = 0;
-
-
-
-					while (str[a] != '\0')
-
-							{
-
-										a++;
-
-											}
-
-
-
-						while (b < a)
-
-								{
-
-											_putchar(str[b]);
-
-													b += 2;
-
-														}
-
-							_putchar('\n');
-
+	_putchar('\n');
 }
