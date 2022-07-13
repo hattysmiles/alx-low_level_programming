@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * puts2 - function prints every other character of a string
+ * rev_string - function that reverse a string
  * @s: string
  * Return: nothing
  */
