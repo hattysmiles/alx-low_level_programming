@@ -1,4 +1,4 @@
-#include "main.h"
+#include "main"
 /**
  * puts2 - function prints every other character of a string
  * @str: string
@@ -6,20 +6,23 @@
  */
 void puts2(char *str)
 {
-	int a, b;
+	int A, a, b;
+	char temp;
 
-	a = 0;
-	b = 0;
-
-	while (str[a] != '\0')
+	A = 0;
+	while (A >= 0)
 	{
-		a++;
+		if (str[A] == '\0')
+			break;
+		A++;
 	}
-
-	while (b < a)
+	for (i = 0; i < (l - 1); i++)
 	{
-		_putchar(str[b]);
-		b += 2;
-	}
-	_putchar('\n');
+		for (j = i + 1; j > 0; j--)
+		{
+			temp = *(s + j);
+			*(s + j) = *(s + (j - 1));
+			*(s + (j - 1)) = temp;
+		}
+	}		
 }
