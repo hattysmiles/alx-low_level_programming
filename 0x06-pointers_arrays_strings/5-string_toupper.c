@@ -5,16 +5,17 @@
  *
  * Return: char
  */
-char *string_toupper(char*str)
+char *string_toupper(char *str)
 {
-	int count;
+	int ln;
+	int i;
 
-	count = 0;
-	while (str[count] != '\0')
+	ln = 0;
+	for (i = 0; i < ln; i++)
 	{
-		if ((str[count] >= 97) && (str[count] <= 122))
-			*(str + count) -= 32;
-		count++;
+		if (str[i] >= 'a' && str[i] <= 'z')
+			str[i] = str[i] - 32;
+		i++;
 	}
 	return (str);
 }
