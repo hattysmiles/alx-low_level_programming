@@ -5,24 +5,24 @@
  * of a square matrix of integers
  * @a: pointer to 2D array
  * @size: size x size of the square matrix
- * 
+ *
  * Return: nothing
  */
 void print_diagsums(int *a, int size)
 {
-	int p;
+	int i;
 	int tl = 0;
 	int tr = 0;
 	int s = size * size;
 
-	for (p = 0; p < s; p += size + 1)
+	for (i = 0; i < s; i += size + 1)
 	{
-		tl += a[p];
+		tl += a[i];
 	}
 
-	for (p = size - 1; p < s - 1; p += size - 1)
+	for (i = size - 1; i < s - 1; i += size - 1)
 	{
-		tr += a[p];
+		tr += a[i];
 	}
 
 	printf("%d, %d\n", tl, tr);
