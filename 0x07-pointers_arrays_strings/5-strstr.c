@@ -1,4 +1,4 @@
-nclude "main.h"
+#include "main.h"
 /**
  * _strstr - function that locates a substring
  * @haystack: locate a substring
