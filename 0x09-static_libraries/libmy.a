@@ -17,6 +17,5 @@
 5-strstr.o
 6-abs.o
 9-strcpy.o
+main.o
 _putchar.o
-
-#endif
