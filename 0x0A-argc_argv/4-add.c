@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
+
 /**
  * main - adds numbers
  * @argc: number of arguments passed to the function
@@ -29,6 +30,6 @@ int main(int argc, char *argv[])
 	}
 	printf("%d\n", a);
 	return (0);
-}	
+}
 
 
