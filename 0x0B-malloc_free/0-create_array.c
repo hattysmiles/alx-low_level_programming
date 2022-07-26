@@ -21,7 +21,5 @@ char *create_array(unsigned int size, char c)
 		return (NULL);
 
 	for (i = 0; i < size; i++)
-		cr[i] = c;
-
-	return (cr);
+		cr[i] = c;	return (cr);
 }
