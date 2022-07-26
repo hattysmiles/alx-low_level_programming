@@ -18,6 +18,14 @@ char *str_concat(char *s1, char *s2)
 		s1 = "";
 	while (*s1)
 	{
+		lens1++;
+		s1++;
+	}
+	s1 = starts1;
+	if (s2 == NULL)
+		s2 = "";
+	while (*s2)
+	{
 		lens2++;
 		s2++;
 	}
