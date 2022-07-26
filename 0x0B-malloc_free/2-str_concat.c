@@ -2,23 +2,43 @@
 #include <stdlib.h>
 
 /**
- * str_concat - function that allocates memory for an array, using malloc
- * @nmemb: number of elements in the array
- * @size: size in bytes of the elements
- *
- * Return: void pointer to allocated memory
+ * str_concat - A function that concatenates two strings
+ * @s1: An input pointer of the first string
+ * @s2: An input pointer of the second string
+ * Return: Apointer to concatened strings or NULL if it str is NULL
  */
-char *str_concat(char *s1, char *s2);
+char *str_concat(char *s1, char *s2)
 {
-	char *pointer;
-	unsigned int i;
+	char *new_str, *starts1, *starts2;
+	int i = 0, lens1 = 0, lens2 = 0;
 
-	if (nmemb == 0 || size == 0)
+	starts1 = s1;
+	starts2 = s2;
+	if (s1 == NULL)
+		s1 = "";
+	while (*s1)
+	{
+		lens2++;
+		s2++;
+	}
+	s2 = starts2;
+	new_str = malloc(sizeof(char) * (lens1 + lens2 + 1));
+	starts1 = new_str;
+	if (new_str == NULL)
 		return (NULL);
-	pointer = malloc(nmemb * size);
-	if (pointer == NULL)
-		return (NULL);
-	for (i = 0; i < (nmemb * size); i++)
-		pointer[i] = 0;
-	return (pointer);
+	for (; i < (lens1 + lens2); i++)
+	{
+		if (i < lens1)
+		{
+			new_str[i] = *s1;
+			s1++;
+		}
+		else
+		{
+			new_str[i] = *s2;
+			s2++;
+		}
+	}
+	new_str[i] = '\0';
+	return (starts1);
 }
