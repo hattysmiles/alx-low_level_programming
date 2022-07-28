@@ -8,6 +8,7 @@
 void _puts(char *str)
 {
 	int i = 0;
+
 	while (str[i])
 	{
 		_putchar(str[i]);
@@ -73,7 +74,6 @@ int main(int argc, char const *argv[])
 	}
 	print_int(_atoi(argv[1]) * _atoi(argv[2]));
 	_putchar('\n');
-
-         return (0);
+return (0);
 }
 
