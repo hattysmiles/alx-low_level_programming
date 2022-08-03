@@ -3,8 +3,7 @@
 /**
  * int_index - function that searches
  * for an integer
-:wq
-*
+ *
  * @array: array with parameters
  * @size: size of the array
  * @cmp: function to call function
