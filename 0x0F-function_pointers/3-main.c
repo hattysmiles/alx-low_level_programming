@@ -5,7 +5,6 @@
 /**
  * main - Prints the result of simple operations.
  * @argc: The number of arguments supplied to the program.
- * 
  * Return: Always 0.
  */
 int main(int argc, char *argv[])
