@@ -30,7 +30,7 @@ int op_sub(int p, int q)
  */
 int op_mul(int p, int q)
 {
-	return (a * b);
+	return (p * q);
 }
 
 /**
