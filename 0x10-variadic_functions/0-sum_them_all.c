@@ -14,11 +14,11 @@ int sum_them_all(const unsigned int b, ...)
 	if (b == 0)
 		return (0);
 
-	va_start(valist, n);
+	va_start(valist, b);
 
-	for (i = 0; i < n; i++)
+	for (i = 0; i < b; i++)
 	{
-		sum += va_arg(valist, const unsigned int);
+		sum += va_arg(valist, unsigned int);
 	}
 	va_end(valist);
 
