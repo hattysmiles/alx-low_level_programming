@@ -30,7 +30,7 @@ int op_sub(int p, int q)
  */
 int op_mul(int p, int q)
 {
-	return (a * b);
+	return (p * q);
 }
 
 /**
@@ -39,9 +39,9 @@ int op_mul(int p, int q)
  * @q: second int
  * Return: result of the division of the numbers
  */
-int op_div(int a, int b)
+int op_div(int p, int q)
 {
-	return (a / b);
+	return (p / q);
 }
 
 /**
@@ -50,7 +50,7 @@ int op_div(int a, int b)
  * @q: second int
  * Return: remainder of division of the numbers
  */
-int op_mod(int a, int b)
+int op_mod(int p, int q)
 {
-	return (a % b);
+	return (p % q);
 }
