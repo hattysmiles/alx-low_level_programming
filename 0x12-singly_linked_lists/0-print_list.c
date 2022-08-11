@@ -1,26 +1,27 @@
-#include <stdio.h>
 #include "lists.h"
-/**
- * print_list - print string and length of string for each element of 'h'
- * @h: pointer to first element of list
- * Return: length of list
- */
-size_t print_list(const list_t *h)
-{
-	size_t size = 0;
+#include <stdio.h>
+#include <stddef.h>
 
-	while (h)
+/**
+ * print_listint - print all the elements of a listint_t
+ * singly linked list.
+ * @h: singly linked list to print
+ * Return: number of the elements in the singly linked list
+ */
+
+size_t print_listint(const listint_t *h)
+{
+	size_t i = 0;
+	const listint_t *p_h;
+
+	p_h = h;
+
+
+	while (p_h != NULL)
 	{
-		if (h->str == NULL)
-		{
-			printf("[%u] (nil)\n", h->len);
-			h = h->next;
-			++size;
-			continue;
-		}
-		printf("[%u] %s\n", h->len, h->str);
-		h = h->next;
-		++size;
+		printf("%d\n", p_h->n);
+		p_h = p_h->next;
+		i += 1;
 	}
-	return (size);
+	return (i);
 }
