@@ -1,6 +1,6 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "lists.h"
+#include <stdlib.h>
+#include <stdio.h>
 
 /**
  * _r - reallocates memory for an array of pointers
@@ -16,7 +16,12 @@ const listint_t **_r(const listint_t **list, size_t size, const listint_t * new)
 	const listint_t **newlist;
 	size_t i;
 
+<<<<<<< HEAD
 	newlist = malloc (size * sizeof(listint_t *));
+=======
+	newlist = malloc(size * sizeof(listint_t *));
+	if (newlist == NULL)
+>>>>>>> d99ecc6eb2d6209af0545a8e732aee773a65ff5d
 	{
 		free(list);
 		exit(98);
