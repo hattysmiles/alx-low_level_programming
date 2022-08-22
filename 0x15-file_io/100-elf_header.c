@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
  * main - main entry point
@@ -134,6 +134,7 @@ void print_version(unsigned char *e_ident)
  * print_osabi - print ELF's osabi
  * @e_ident: pointer to char array
  */
+
 void print_osabi(unsigned char *e_ident)
 {
 	printf("  OS/ABI:                            ");
