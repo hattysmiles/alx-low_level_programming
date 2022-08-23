@@ -1,4 +1,4 @@
-iinclude "main.h"
+#include "main.h"
 #include <stdlib.h>
 #include <sys/types.h>
 #include <sys/stat.h>
@@ -23,6 +23,11 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	fd = open(filename, O_RDONLY, 0);
 
 	if (fd < 0)
+		return (0);
+
+	buffer = malloc(sizeof(char) * letters);
+
+	if (buffer == NULL)
 	{
 		close(fd);
 		return (0);
@@ -42,6 +47,5 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	if (q_read != q_write)
 		return (0);
-
 	return (q_write);
 }
