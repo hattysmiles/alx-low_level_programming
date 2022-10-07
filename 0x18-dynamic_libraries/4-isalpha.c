@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * _isalpha - checks if a char is alpha or not
  *
