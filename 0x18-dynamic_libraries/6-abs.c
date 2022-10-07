@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * _abs - calculates absolute value
  *
